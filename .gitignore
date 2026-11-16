@@ -1,0 +1,8 @@
+bin/
+obj/
+release/
+.vs/
+*.user
+
+# Local build of the program (made by build.ps1) with icons drawn from the player's game
+/XboxIconSwap/

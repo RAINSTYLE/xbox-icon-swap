@@ -1,0 +1,24 @@
+{
+  // EA SPORTS UFC 3 (PS4, CUSA06534) — native PC port
+  "name": "EA SPORTS UFC 3",
+  "titleIds": [ "CUSA06534" ],
+  "archives": [
+    {
+      "file": "databigs/inxp_ui_40.big",
+      // PNGs are drawn from the game's own textures on first run (generator "ufc3")
+      "iconFolder": "inxp_ui_40",
+      "pathPrefix": "samplegame/ui/kettle_assets/",
+      "generator": "ufc3",
+      // Scaleform menus contain both PS and Xbox buttons: show the Xbox ones
+      "swfSwaps": [ { "files": [ "samplegame/ui/lib/samplefedata.swf", "samplegame/ui/lib/external/tin.swf" ], "from": "_ps_", "to": "_xb_" } ]
+    },
+    {
+      // update 1.14 carries newer copies of the same SWF files
+      "file": "databigs/patch_inxp900.big",
+      "swfSwaps": [ { "files": [ "samplegame/ui/lib/samplefedata.swf", "samplegame/ui/lib/external/tin.swf" ], "from": "_ps_", "to": "_xb_" } ]
+    }
+  ],
+  // the port's launcher stores the game folder in its "game=" line
+  "launcherConfigs": [ "%LOCALAPPDATA%/UFC3Native/sacredfire.ini" ],
+  "defaultPaths": [ "C:/Games/EA Sports UFC 3", "D:/Games/EA Sports UFC 3", "E:/Games/EA Sports UFC 3" ]
+}

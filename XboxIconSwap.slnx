@@ -1,0 +1,7 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/IconBuilder/IconBuilder.csproj" />
+    <Project Path="src/IconSwap.Core/IconSwap.Core.csproj" />
+    <Project Path="src/XboxIconSwap/XboxIconSwap.csproj" />
+  </Folder>
+</Solution>
